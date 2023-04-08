@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat GCT</title>    
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+  <ul class="navbar">
+    <li class="nav-item">
+      <a href=""><img src="img/home1.png" alt="홈" style="float: left;"></a>
+      <a class="title">CHAT - GCT</a>
+      <a href=""><img src="img/Menu.png" alt="메뉴" style="float: right;"></a>
+    </li>
+  </ul>
+  <p class="boundary"></p>
+  <div class="wrapper">
+    <div class="display-container">
+      <ul class="chatting-list">
+        <li class="received">
+          <span class="profile">
+            <img class="received-image" src=img/icon.png alt="any">
+            <span class="user">
+              CHAT-GCT
+            </span>
+          </span>
+          <span class="message">
+            안녕하세요. 저는 가천대학교 챗봇 CHAT_GCT 에요! <br>
+            학사일정, 공지사항, 개설강좌 등에 대해 열심히 공부했답니다. <br>
+            최선을 다해 답변드릴게요. <br>
+            <br>
+            상단의 메뉴를 통해 로그인 후 이용하시면 학사일정, 시간표 등 나만의 맞춤 챗봇으로 이용할 수 있어요! <br>
+            <br>
+            로그인 후 반드시 로그아웃 하여 개인정보 노출에 주의해주세요!
+          </span>
+        </li>
+
+        <li class="received">
+          <span class="profile" style="visibility:hidden">
+            <span class="user">
+              CHAT-GCT
+            </span>
+            <img class="received-image" src=img/icon.png alt="any">
+          </span>
+          <span class="message">
+            <div class="guide-box" onclick="location.href='이동할 링크주소(URL)';">시간표 검색</div> 
+            <div class="guide-box" onclick="location.href='이동할 링크주소(URL)';">공지사항</div> 
+            <div class="guide-box" onclick="location.href='이동할 링크주소(URL)';">학사일정</div>
+            <div class="guide-box" onclick="location.href='이동할 링크주소(URL)';">수강신청</div> 
+            <div class="guide-box" onclick="location.href='이동할 링크주소(URL)';">등록금</div> 
+            <div class="guide-box" onclick="location.href='이동할 링크주소(URL)';">휴학신청</div>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="input-container">
+      <input type="text" class="chatting-input" autofocus/>
+      <button class="send-button">입력</button>
+    </div>
+  </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/chat.js"></script>
+
+</body>
+
+</html>

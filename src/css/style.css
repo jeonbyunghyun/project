@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  html,
+  body {
+    height: 100%;
+    background-color: white;
+  }
+  
+  input:focus {outline: none;}
+
+  .nav-item {
+    font-family: Jeju Gothic;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 700;
+  }
+
+  
+
+  .wrapper {
+    height: 88%;
+    width: 99.9%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid black;
+    position: relative;
+  }
+
+  .boundary{
+    background: #000066;
+    height: 40px;
+    border-width:2px; 
+    border-color:#666666; 
+    border-style:solid;
+  }
+
+  .user-container {
+    background: #FF0033;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  
+  .user-container label {
+    font-size: 14px;
+    margin-right: 1rem;
+  }
+  
+  .user-container input {
+    border-radius: 3px;
+    border: none;
+    height: 100%;
+  }
+  
+  .user-container .user-image {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+  }
+
+  .display-container {
+    background: #EEEEEE;
+    flex: 12;
+    overflow-y: scroll;
+  }
+  
+  .input-container {
+    flex: 1;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    padding: 3px;
+    margin-left: 10px;
+  }
+  
+  .input-container span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.3rem;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .chatting-input {
+    font-size: 15px;
+    height: 100%;
+    flex: 8;
+    border: none;
+  }
+  
+  .send-button {
+    flex: 1;
+    background: rgb(221, 221, 233);
+    border: none;
+    height: 100%;
+    border-radius: 3px;
+    font-weight: 700;
+    color: rgb(92, 104, 136);
+    cursor: pointer;
+  }
+  
+  .chatting-list li {
+    width: 90%;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    margin-top: 0.5rem;
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile .user {
+    font-size: 10px;
+    margin-bottom: 0.2rem;
+    font-weight: 1000;
+  }
+  
+  .profile .user-image {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+  }
+
+  .profile .received-image {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .message {
+    border-radius: 30px;
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 5px;
+    min-width: 40px;
+    border: 2px solid rgb(92, 104, 136);
+  }
+  
+  .time {
+    font-size: 10px;
+    margin: 0 5px;
+    align-self: end;
+  }
+  
+  .sent {
+    flex-direction: row-reverse;
+    float: right;
+    text-align: center;
+  }
+  
+  .sent .message {
+    background: #ffeb33;
+  }
+  
+  .received {
+    max-width: 1000px;
+  }
+
+  .received .message {
+    background: #fff;
+  }
+
+  .received .received-image {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+  }
+
+  .received .guide-box {
+    float: left;
+    background-color: rgb(221, 221, 233);
+    width: 250px;
+    height: 80px;
+    border-radius: 15px;
+    margin: 10px;
+    color: rgb(92, 104, 136);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
